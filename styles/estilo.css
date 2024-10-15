@@ -1,0 +1,270 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #00FFFF; /* Azul neón */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo a {
+    font-size: 28px;
+    color: #00FFFF; /* Azul neón */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #00FFFF; /* Azul neón */
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #FF00FF; /* Magenta neón para el hover */
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.registro-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Párrafo de beneficios */
+.beneficios {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.beneficios-titulo{
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Formulario */
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #00FFFF; /* Azul neón */
+    font-size: 14px;
+}
+
+footer a {
+    color: #00FFFF; /* Azul neón */
+    text-decoration: none;
+    margin: 10px 25px 10px 25px;
+}
+
+footer a:hover {
+    color: #FF00FF; /* Magenta neón para el hover */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .registro-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+}
+
+/* Estilos para el checkbox y el label */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.checkbox-container input {
+    margin-right: 10px; /* Espacio entre el checkbox y el label */
+}
+
+/* Estilos para la sección de suscripción */
+.suscripcion-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
+    margin: 0;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Ancho de las tarjetas */
+    text-align: center;
+}
+
+.tarjeta h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.tarjeta ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.tarjeta ul li {
+    margin: 5px 0;
+}
+
+.tarjeta button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Botón a todo el ancho de la tarjeta */
+}
+
+.tarjeta button:hover {
+    background-color: #218838;
+}
+
+.titulo-planes{
+    text-align: center;
+    margin: 30px 0 0 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.tarjeta {
+    margin:30px 30px 30px 30px;
+}
+
+.boton-buscar {
+    margin-left: 10px;
+}
+
+.btn-primary {
+    background-color: #28a745; /* Verde */
+    border-color: #28a745; /* Verde */
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Verde oscuro al pasar el mouse */
+    border-color: #1e7e34; /* Verde oscuro al pasar el mouse */
+}
+
+.carousel-inner img {
+    max-height: 420px; /* Altura máxima de 420px */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+    object-fit: cover; /* Mantiene la relación de aspecto y recorta si es necesario */
+}

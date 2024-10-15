@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Videojuegos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">VIDEOJUEGOS</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="suscripcion.html">Suscripción</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Carrusel de imágenes -->
+            <div id="carruselImágenes" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/juego1.avif" class="d-block w-100" alt="Juego 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/juego2.avif" class="d-block w-100" alt="Juego 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/juego3.avif" class="d-block w-100" alt="Juego 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/juego4.jpg" class="d-block w-100" alt="Juego 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/juego5.jpg" class="d-block w-100" alt="Juego 5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/juego6.jpg" class="d-block w-100" alt="Juego 6">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carruselImágenes" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carruselImágenes" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+            <div class="welcome-text text-center mt-4">
+                <h2>¡Bienvenido a nuestra Tienda de Videojuegos!</h2>
+                <p>Descubre los mejores juegos y ofertas increíbles. ¡Compra ahora y disfruta de horas de diversión!</p>
+            </div>
+
+            <h2 class="titulo-planes mt-5">Top Juegos</h2>
+            <div class="row">
+                <!-- Tarjetas de juegos -->
+                <div class="col-md-4">
+                    <div class="tarjeta">
+                        <h3>The Last of Us Part II</h3>
+                        <p>Una aventura emocional en un mundo post-apocalíptico.</p>
+                        <p>Precio: $29.99</p>
+                        <a href="tienda.html" class="btn btn-primary">Detalles</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tarjeta">
+                        <h3>Assassin's Creed Valhalla</h3>
+                        <p>Conviértete en un guerrero vikingo y conquista nuevas tierras.</p>
+                        <p>Precio: $49.99</p>
+                        <a href="tienda.html" class="btn btn-primary">Detalles</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tarjeta">
+                        <h3>Ghost of Tsushima</h3>
+                        <p>Un samurái lucha por la libertad en la era feudal de Japón.</p>
+                        <p>Precio: $24.99</p>
+                        <a href="tienda.html" class="btn btn-primary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="titulo-planes mt-5">Promociones</h2>
+            <div class="row">
+                <!-- Tarjetas de promociones -->
+                <div class="col-md-4">
+                    <div class="tarjeta">
+                        <h3>Promoción 1</h3>
+                        <p>Descuento del 20% en todos los juegos.</p>
+                        <a href="suscripcion.html" class="btn btn-primary">Detalles</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tarjeta">
+                        <h3>Promoción 2</h3>
+                        <p>Compra 2 juegos y lleva el tercero gratis.</p>
+                        <a href="suscripcion.html" class="btn btn-primary">Detalles</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tarjeta">
+                        <h3>Promoción 3</h3>
+                        <p>Descuento del 30% en juegos seleccionados.</p>
+                        <a href="suscripcion.html" class="btn btn-primary">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="titulo-planes mt-5">Testimonios de Juegos</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="tarjeta">
+                        <h3>The Last of Us Part II</h3>
+                        <h5>Juan Pérez</h5>
+                        <p>"Juego increíble, la jugabilidad es excepcional!"</p>
+                        <textarea class="form-control" rows="2" placeholder="Escribe tu comentario..."></textarea>
+                        <button class="btn btn-primary mt-2">Enviar Comentario</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tarjeta">
+                        <h3>Assassin's Creed Valhalla</h3>
+                        <h5>Ana Gómez</h5>
+                        <p>"Gráficos impresionantes y una historia cautivadora."</p>
+                        <textarea class="form-control" rows="2" placeholder="Escribe tu comentario..."></textarea>
+                        <button class="btn btn-primary mt-2">Enviar Comentario</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tarjeta">
+                        <h3>Ghost of Tsushima</h3>
+                        <h5>Carlos Martínez</h5>
+                        <p>"Definitivamente vale la pena cada centavo. ¡Recomendado!"</p>
+                        <textarea class="form-control" rows="2" placeholder="Escribe tu comentario..."></textarea>
+                        <button class="btn btn-primary mt-2">Enviar Comentario</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Tienda de Videojuegos. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Videojuegos - Tienda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">VIDEOJUEGOS</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="suscripcion.html">Suscripción</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Menú de Categorías -->
+                <div class="col-md-3">
+                    <h4>Categorías</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="#" class="category-filter" data-category="accion">Acción</a></li>
+                        <li class="list-group-item"><a href="#" class="category-filter" data-category="aventura">Aventura</a></li>
+                        <li class="list-group-item"><a href="#" class="category-filter" data-category="deportes">Deportes</a></li>
+                        <li class="list-group-item"><a href="#" class="category-filter" data-category="estrategia">Estrategia</a></li>
+                        <li class="list-group-item"><a href="#" class="category-filter" data-category="terror">Terror</a></li>
+                    </ul>
+                </div>
+
+                <!-- Sección Principal de Tienda -->
+                <div class="col-md-9">
+                    <div class="d-flex justify-content-between">
+                        <h2>Tienda</h2>
+                        <!-- Barra de búsqueda con botón -->
+                        <div class="input-group w-50">
+                            <input type="text" id="searchBar" class="form-control" placeholder="Buscar juegos...">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary" id="searchButton">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4" id="gameList">
+                        <!-- Tarjetas de juegos -->
+                        <!-- Acción -->
+                        <div class="col-md-4" data-category="accion">
+                            <div class="tarjeta">
+                                <h3>The Last of Us Part II</h3>
+                                <p>Un viaje emocional en un mundo post-apocalíptico.</p>
+                                <p>Precio: $59.99</p>
+                                <button class="btn btn-primary details-btn" data-title="The Last of Us Part II" data-description="Un viaje emocional en un mundo post-apocalíptico." data-price="$59.99">Detalles</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-category="accion">
+                            <div class="tarjeta">
+                                <h3>God of War</h3>
+                                <p>Acompaña a Kratos en su viaje por la mitología nórdica.</p>
+                                <p>Precio: $39.99</p>
+                                <button class="btn btn-primary details-btn" data-title="God of War" data-description="Acompaña a Kratos en su viaje por la mitología nórdica." data-price="$39.99">Detalles</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-category="accion">
+                            <div class="tarjeta">
+                                <h3>Call of Duty: Warzone</h3>
+                                <p>Sobrevive en la batalla y conquista el campo de guerra.</p>
+                                <p>Precio: $59.99</p>
+                                <button class="btn btn-primary details-btn" data-title="Call of Duty: Warzone" data-description="Sobrevive en la batalla y conquista el campo de guerra." data-price="$59.99">Detalles</button>
+                            </div>
+                        </div>
+
+                        <!-- Aventura -->
+                        <div class="col-md-4" data-category="aventura">
+                            <div class="tarjeta">
+                                <h3>Ghost of Tsushima</h3>
+                                <p>Conviértete en un samurái y protege tu hogar.</p>
+                                <p>Precio: $49.99</p>
+                                <button class="btn btn-primary details-btn" data-title="Ghost of Tsushima" data-description="Conviértete en un samurái y protege tu hogar." data-price="$49.99">Detalles</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-category="aventura">
+                            <div class="tarjeta">
+                                <h3>Animal Crossing: New Horizons</h3>
+                                <p>Construye tu isla perfecta en este simulador de vida.</p>
+                                <p>Precio: $49.99</p>
+                                <button class="btn btn-primary details-btn" data-title="Animal Crossing: New Horizons" data-description="Construye tu isla perfecta en este simulador de vida." data-price="$49.99">Detalles</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-category="aventura">
+                            <div class="tarjeta">
+                                <h3>Assassin's Creed Valhalla</h3>
+                                <p>Explora la era vikinga y escribe tu propia saga.</p>
+                                <p>Precio: $59.99</p>
+                                <button class="btn btn-primary details-btn" data-title="Assassin's Creed Valhalla" data-description="Explora la era vikinga y escribe tu propia saga." data-price="$59.99">Detalles</button>
+                            </div>
+                        </div>
+
+                        <!-- Deportes -->
+                        <div class="col-md-4" data-category="deportes">
+                            <div class="tarjeta">
+                                <h3>FIFA 23</h3>
+                                <p>Disfruta de la mejor experiencia de fútbol.</p>
+                                <p>Precio: $59.99</p>
+                                <button class="btn btn-primary details-btn" data-title="FIFA 23" data-description="Disfruta de la mejor experiencia de fútbol." data-price="$59.99">Detalles</button>
+                            </div>
+                        </div>
+
+                        <!-- Estrategia -->
+                        <div class="col-md-4" data-category="estrategia">
+                            <div class="tarjeta">
+                                <h3>Civilization VI</h3>
+                                <p>Construye un imperio y deja tu huella en la historia.</p>
+                                <p>Precio: $49.99</p>
+                                <button class="btn btn-primary details-btn" data-title="Civilization VI" data-description="Construye un imperio y deja tu huella en la historia." data-price="$49.99">Detalles</button>
+                            </div>
+                        </div>
+
+                        <!-- Terror -->
+                        <div class="col-md-4" data-category="terror">
+                            <div class="tarjeta">
+                                <h3>Resident Evil Village</h3>
+                                <p>Enfréntate a tus miedos en esta experiencia de terror.</p>
+                                <p>Precio: $59.99</p>
+                                <button class="btn btn-primary details-btn" data-title="Resident Evil Village" data-description="Enfréntate a tus miedos en esta experiencia de terror." data-price="$59.99">Detalles</button>
+                            </div>
+                        </div>
+                        <div class="col-md-4" data-category="terror">
+                            <div class="tarjeta">
+                                <h3>Dead Space</h3>
+                                <p>Sobrevive en una nave espacial infestada de criaturas mortales.</p>
+                                <p>Precio: $49.99</p>
+                                <button class="btn btn-primary details-btn" data-title="Dead Space" data-description="Sobrevive en una nave espacial infestada de criaturas mortales." data-price="$49.99">Detalles</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal oculto para mostrar detalles -->
+<div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="gameModalLabel">Detalles del Juego</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3 id="modalGameTitle"></h3>
+                <p id="modalGameDescription"></p>
+                <p id="modalGamePrice"></p> <!-- Mostrar el precio del juego -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-success" id="buyButton">Comprar</button> <!-- Botón de comprar -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <footer class="mt-5">
+        <p>© 2024 Tienda de Videojuegos. Todos los derechos reservados.</p>
+        <p>
+            <a href="#">Términos y Condiciones</a> | 
+            <a href="#">Política de Privacidad</a> | 
+            <a href="contacto.html">Contáctanos</a>
+        </p>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/tienda.js"></script>
+</body>
+</html>
